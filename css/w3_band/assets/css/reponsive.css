@@ -1,0 +1,93 @@
+/* responsive pc>=1024px */
+@media  (min-width: 64.000em ) {
+    
+    
+}
+
+@media  (max-width: 63.938em ){
+    .btn{
+        padding: 15px 16px;
+        font-size: 16px;
+    }
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+    #contents .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    #contents .contact-info {
+        font-size: 18px;
+        line-height: 2;
+    }
+    #contents .contact-info {
+        font-size: 16px;
+    }
+    .footer-section .footer-list {
+        font-size: 38px;
+    }
+    .footer-section .text-footer {
+        font-size: 20px;
+        padding: 16px 0;
+        color: rgba(0, 0, 0, 0.6);
+        display: block;
+    }
+}
+
+
+@media (min-width: 46.250em) and (max-width:  63.938em) {
+    #contents .menber-ing{
+        width: 176px;
+    }   
+}  
+   
+
+
+@media (max-width:  46.188em) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+    #nav{
+        display: block;
+    }   
+    #nav > li {
+        display: block;
+
+    }
+    #nav .subnav{
+    position: initial;
+    background-color: #ccc;
+    }
+    #nav .subnav a{
+        color: #000;
+        padding: 0 74px;
+
+    }
+   
+    #contents .menber-ing {
+        width: 100%;
+    }
+    .s-full-width,.s-col-full{
+        width: 100% !important;
+    }
+    .s-mt-16{
+        margin-top: 8px !important;
+    }
+    #slider .text-content{
+        display: none;
+    }
+    #contents .contact-form 
+    {
+        margin-top: 32px;
+        
+    }
+   
+}

@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear {
+    clear: both;
+}
+.text-white {
+    color: #fff !important; 
+}
+.text-center {
+   text-align: center !important;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.mt-32{
+    margin-top: 32px !important;
+}
+.full-right{
+    float: right    !important;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.col {
+    float: left;
+    padding: 0 8px; 
+}
+.col-full{
+  
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: calc(100%/3);
+}
+
+#main {
+   
+}
+
+#header {
+    background-color: #000;
+   
+    height: 46px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+   
+}
+
+#nav > li {
+    display: inline-block;
+ }
+ #nav > li:first-child{
+    display: inline-block;
+ }
+#nav li {
+    position: relative;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+  
+  
+}
+#nav li a {
+    
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    list-style-type: none;
+  
+}
+
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+
+}
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+    
+}
+#nav .nav_arrow_down {
+    font-size: 15px;
+} 
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:none ;
+}
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: crimson;
+    cursor: pointer;
+
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    background-color: #ccc;
+    color: #000;
+    
+}
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px; 
+}   
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(../imges/slider/slider_1.jpg) top center / cover no-repeat;
+    
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 46px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+}
+
+#slider .text-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-top: 25px;   
+}
+#contents {
+
+   
+}
+#contents .content-section {
+    width: 800px;
+    max-width:100% ;
+    padding:64px 0 112px;
+     margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px; 
+    padding-right: 16px; 
+
+}
+#contents .section-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+#contents .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#contents .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;   
+}
+#contents .heading-center{
+    margin-top: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    
+}
+#contents .menber-list {
+    margin-top: 20px;
+    
+}
+
+#cotents .menber-name{
+    font-size: 20px;
+    color: #101aef;
+    opacity: 0.8;
+}
+#cotents .menber-name a:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.menber-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    padding-bottom: 64px;
+    font-size: 15px;
+}
+
+#contents .menber-ing{
+    width: 154px;
+    margin-top: 15px;
+    vertical-align:middle;
+    border-radius: 4px;
+}   
+
+
+#contents .tour-section{
+    background-color: #000;
+}
+#contents .ticket-list {
+    background-color: #fff;
+    margin-top: 45px;  
+    list-style: none;  
+}
+#contents .ticket-list li {
+    color:#757575;
+    font-size: 15x;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}   
+#contents .quantily{
+    color: #fff;
+    background-color: #000;
+    float: right;
+    border-radius: 50%; 
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+#contents .sold-out {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 3px 4px;
+
+}
+#contents .place-list{
+   margin-top: 32px;
+
+}
+#contents .place-decs{
+    padding-top: 12px;
+}
+#contents .place-img{
+    width: 100%;
+    
+    display: block;
+  
+ 
+
+}
+#contents .place-img:hover{
+    opacity: 0.5;
+}
+#contents .place-body{
+    background-color: #fff;
+    padding: 16px;
+    
+}
+
+#contents .place-heading{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;    
+}
+#contents .place-heading:hover {
+    color:#101aef;
+    opacity: 0.8;
+}
+#contents .place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+#contents .place-decsplace-heading{
+
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+/* contact */
+#contents .contact-content{
+    margin-top: 48px;  
+ }
+#contents .contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+#contents .contact-info i[class*=ti-] {
+    width: 30px;
+    display: inline-block;
+}
+#contents .contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+#contents .contact-info a:hover{
+    opacity: 1;
+}
+#contents .contact-form{
+    font-size: 15px;
+}
+#contents .form-control{
+    padding:   12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+}
+
+.footer-section{
+    
+}
+.footer-section .footer-ing img {
+    width: 100%;
+}
+.footer-section .sub-footer-text {
+    padding: 64px 16px;
+}
+
+.footer-section .footer-list {
+    font-size: 26px;
+}
+.footer-section .footer-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.footer-section .footer-list a:hover{
+
+    color: rgba(0, 0, 0, 0.3);
+}
+.footer-section .text-footer {
+    font-size: 18px;
+    padding: 16px 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+.footer-section .text-footer a{
+    padding-left: 12px;
+    color: #101aef;
+    opacity: 0.8;
+}
+.footer-section .text-footer a:hover {
+    color: rgba(0, 0, 0, 13);
+}
+
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}   
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-icon-bag{
+    margin-right: 16px;
+}
+.modal-icon-close{
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 12px;
+   color: #fff;
+   cursor: pointer;
+  
+}
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets {
+    background: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+/* hieu ung chuyen dong modal */
+@keyframes modalFadeIn{
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+   
+

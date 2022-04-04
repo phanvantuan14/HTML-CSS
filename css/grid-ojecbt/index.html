@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/grid.css">
+   
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+              text-align: center;
+        }
+        .course-item {
+            background-color: orange;
+            height: 270px;
+        }
+        h1 {
+            color: #fff;
+            line-height: 270px;
+            margin: 0;
+        }
+        @media (max-width:1113px) {
+            .course-item{
+                margin-top: 18px;
+            }
+        }
+        .category {
+            background-color: palegreen;
+           
+             height: 270px;
+        }
+        ul {
+            margin-top: 0;
+        }
+    </style>
+    
+</head>
+    <!-- column:.col
+    prefix classs:
+    -c- mobile
+    -m-tablet
+    -l-pc
+ -->
+<body>
+    <div class="grid wide container">
+      <div class="row">
+         
+
+          <div class="col l-9 m-12 c-12">
+              <div class="row">
+                  <div class="col l-4 l-o-3 m-6 c-12">
+                      <div class="course-item">
+                          <h1>course</h1> 
+                      </div>
+                  </div>
+
+                </div>
+                
+              </div>
+          </div>
+         
+
+      </div>
+    </div>
+</body>
+</html>
